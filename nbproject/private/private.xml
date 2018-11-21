@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/m171/market/produtos.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/dao/clsCidadeDAO.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/dao/clsProdutoDAO.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/dao/clsCategoriaDAO.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/dao/clsConexao.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCategoria.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/model/clsCategoria.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarProduto.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/dao/clsClienteDAO.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/index.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/categorias.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCidade.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCliente.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/frmCliente.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/model/clsCidade.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/frmProduto.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/menu.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/clientes.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/cidades.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/model/clsCliente.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/model/clsProduto.php</file>
+        </group>
+    </open-files>
+</project-private>
