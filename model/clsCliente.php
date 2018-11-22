@@ -3,7 +3,7 @@
 class Cliente {
 
     //put your code here
-    private $id, $nome, $telefone, $email, $cpf, $senha, $filhos, $cidade, $foto, $sexo;
+    private $id, $nome, $telefone, $email, $cpf, $senha, $filhos, $cidade, $foto, $sexo, $admin;
 
     function __construct($id = NULL, $nome = NULL, $telefone = NULL, $email = NULL, $cpf = NULL, $senha = NULL, $filhos = NULL, $cidade = NULL, $foto = NULL, $sexo = NULL) {
         $this->id = $id;
@@ -17,7 +17,15 @@ class Cliente {
         $this->foto = $foto;
         $this->sexo = $sexo;
     }
+    function getAdmin() {
+        return $this->admin;
+    }
 
+    function setAdmin($admin) {
+        $this->admin = $admin;
+    }
+
+    
     public function getId() {
         return $this->id;
     }

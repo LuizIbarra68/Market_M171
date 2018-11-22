@@ -11,8 +11,11 @@ if( isset($_SESSION['idCliente']))
 if( isset($_SESSION['nome']))
     unset ($_SESSION['nome']);
 
-if( isset($_SESSION['fot']))
+if( isset($_SESSION['foto']))
     unset ($_SESSION['foto']);
+
+if( isset($_SESSION['admin']))
+    unset ($_SESSION['admin']);
 
 session_destroy();
 

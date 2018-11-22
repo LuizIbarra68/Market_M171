@@ -24,7 +24,11 @@ if (isset($_REQUEST['inserir'])) {
         } else {
             $cliente->setFilhos(0);
         }
-
+         if (isset($_POST['cbAdmin'])) {
+            $cliente->setAdmin(1);
+        } else {
+            $cliente->setAdmin(0);
+        }
 
         $cliente->setSexo($_POST['rbSexo']);
 
@@ -68,6 +72,11 @@ if (isset($_REQUEST['editar'])) {
     } else {
         $cliente->setFilhos(0);
     }
+    if (isset($_POST['cbAdmin'])) {
+            $cliente->setAdmin(1);
+        } else {
+            $cliente->setAdmin(0);
+        }
 
 
     $cliente->setSexo($_POST['rbSexo']);
