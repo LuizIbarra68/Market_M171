@@ -18,7 +18,7 @@ class Cliente {
         $this->sexo = $sexo;
     }
 
-    function getId() {
+    public function getId() {
         return $this->id;
     }
 

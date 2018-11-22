@@ -121,6 +121,7 @@ class ClienteDAO {
                 . " WHERE ( email = '".$login."' OR "
                 . "            CPF = '".$login."' ) "
                 . "        And senha = '".$senha."' ";
+   
         $result = Conexao::consultar($sql);
         
         if(mysqli_num_rows($result) > 0 ){
@@ -129,7 +130,7 @@ class ClienteDAO {
             $cliente->setId($dados['id'] );
             $cliente->setNome($dados['nome'] );
             $cliente->setFoto($dados['foto'] );
-            
+           
             return $cliente;
             
         } else {
