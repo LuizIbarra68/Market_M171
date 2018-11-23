@@ -8,6 +8,7 @@ include_once 'model/clsproduto.php';
 $nome = "";
 $preco = "";
 $quantidade = "";
+$admin = 0;
 $idCategoria = 0;
 $foto = "sem_foto.png";
 $action = "inserir";
@@ -46,6 +47,21 @@ if (isset($_REQUEST['editar'])) {
         <br><br><br>
 
         <form action="controller/salvarProduto.php?<?php echo $action; ?>" method="POST" enctype="multipart/form-data">
+            
+            <?php
+            if( isset( $_SESSION['admin']) &&  $_SESSION['admin'] ){
+                
+                if( $admin ){
+                    echo '<input type="checkbox" selected name="cbAdmin" />';
+                } else {
+                    echo '<input type="checkbox"  name="cbAdmin" />';
+                    
+                }
+                echo '<label>Admin</label> <br><br>';
+            
+          
+            }
+            ?>
             <label>Nome: </label>
             <input type="text" name="txtNome" value="<?php echo $nome; ?>" required maxlength="100"/><br><br>
 

@@ -9,8 +9,15 @@ if (isset($_REQUEST['inserir'])) {
 
         $produto = new Produto();
         $produto->setNome($_POST['txtNome']);
-        $produto->setPreco($_POST['txtPreco']);
+        $preco =$_POST['txtPreco'];
+        $preco = str_replace(",", ".", $preco);
+        $produto->setPreco($preco);
+        
+        
+        
         $produto->setQuantidade($_POST['txtQuantidade']);
+        $qtd = str_replace(",", ".", $qtd);
+        $produto->setQuantidade($qtd);
         $produto->setFoto(salvarFoto());
         
         

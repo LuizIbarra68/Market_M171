@@ -1,5 +1,9 @@
 
 <?php
+
+session_start();
+if( isset( $_SESSION['admin']) && $_SESSION['admin'] ){
+
 include_once 'model/clsCategoria.php';
 include_once 'dao/clsCategoriaDAO.php';
 include_once 'dao/clsConexao.php';
@@ -89,3 +93,9 @@ if (isset($_REQUEST['editar'])) {
 
     </body>
 </html>
+
+<?php
+}else {
+    header("Location: indx.php");
+    
+}

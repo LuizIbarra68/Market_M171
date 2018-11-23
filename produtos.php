@@ -19,10 +19,14 @@ include_once 'model/clsProduto.php';
         <?php
         require_once 'menu.php';
         ?>
-
+        
         <h1 align="center">Produtos</h1>
         <br><br><br>
-
+        
+        <?php
+        if( isset( $_SESSION['admin']) && $_SESSION['admin']){
+        
+        ?>
         <!--botão para adicionar clientes -->
         <a href="frmProduto.php">
             <button>Cadastrar novo Produto</button></a>
@@ -31,6 +35,7 @@ include_once 'model/clsProduto.php';
         
        
         <?php
+        }
         $lista = ProdutoDAO::getProdutos();
 
         if ($lista->count() == 0) {
@@ -53,6 +58,7 @@ include_once 'model/clsProduto.php';
                 <th>Categoria</th>
                 <th>Editar</th>
                 <th>Excluir</th>
+                <th>Comprar</th>
             </tr>
             
           
@@ -63,12 +69,25 @@ include_once 'model/clsProduto.php';
                     echo '  <td>' . $pro->getId() . '</td>';
                     echo '  <td><img src="fotos_produtos/' . $pro->getFoto() . '" width="30px"/></td>';
                     echo '  <td>' . $pro->getNome() . '</td>';
-                    echo '  <td>' . $pro->getPreco() . '</td>';
-                    echo '  <td>' . $pro->getQuantidade() . '</td>';
+                    
+                    $preco = str_replace(".", ",", $pro->getPreco() );
+                    echo ' <td>R$'.$preco.'</td>';
+                    
+                    $qtd = str_replace(".", ",", $pro->getQuantidade() );
+                    echo ' <td>R$'.$qtd.'</td>';
+                    
                     echo '  <td>' . $pro->getCategoria()->getNome() . '</td>';
+                    
+                    $dasabilita = "";
+                    if ( !isset( $_SESSION['admin']) || !$_SESSION['admin'] ){
+                        $dasabilita = " disabled ";
+                    }
 
                     echo '  <td><a href="frmProduto.php?editar&idProduto='.$pro->getId().'" ><button>Editar</button></a></td>';
-                    echo '  <td><a href="controller/salvarProduto.php?excluir&idProduto='.$pro->getId().'" ><button>Excluir</button></a></td>';
+                    echo '  <td><a href="controller/salvarProduto.php?excluir&idProduto='.$pro->getId().'" ><button '.desabilita.' >Excluir</button></a></td>';
+                    echo '  <td><a href="carrinho.php?adicionar&idProduto='.$pro->getId().'" ><button>Adicionar</button></a></td>';
+                    
+                    
                     echo '</tr>';
              
                 }
