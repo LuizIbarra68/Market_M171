@@ -8,25 +8,26 @@
             <file>file:/C:/xampp/htdocs/m171/market/dao/clsProdutoDAO.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/dao/clsCategoriaDAO.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/dao/clsConexao.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/entrar.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCategoria.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/model/clsCategoria.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarProduto.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/dao/clsClienteDAO.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/index.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/categorias.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/sair.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/meuCarrinho.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCidade.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/carrinho.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCliente.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/frmCliente.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/model/clsCidade.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/frmProduto.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/menu.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/model/clsProduto.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/entrar.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCategoria.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/model/clsCategoria.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarProduto.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/carrinho.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/controller/salvarCliente.php</file>
+            <file>file:/C:/xampp/htdocs/m171/market/frmProduto.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/clientes.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/cidades.php</file>
             <file>file:/C:/xampp/htdocs/m171/market/model/clsCliente.php</file>
-            <file>file:/C:/xampp/htdocs/m171/market/model/clsProduto.php</file>
         </group>
     </open-files>
 </project-private>
