@@ -38,7 +38,23 @@ class Conexao {
             //fechar para fechar a conexão com o banco
         }
     }
+    
+    public static function executarComRetornoId($sql) {
 
+        //instruções sql
+        //
+            //self pra executar o metodo na propria classe
+        $conn = self::abrir();
+        $id = 0;
+        //abrir é para abrir conexão com o banco de dados
+        if ($conn) {
+       mysqli_query($conn, $sql);
+       $id = mysqli_insert_id($conn);
+       self::fechar($conn);
+            //fechar para fechar a conexão com o banco
+        }
+        return $id;
+    }
     public static function consultar($sql) {
 
         //instruções sql
