@@ -17,8 +17,14 @@ if( isset($_REQUEST['inserir']) ){
     $cliente->setId($_SESSION['idCliente']);
     date_default_timezone_get('America/Sao_Paulo');
     $horario = date("y-m-d H:i:s");
-    $idPedido = PedidoDAO::inserir($pedido);
     
+    $pedido = new Pedido();
+    $pedido->setEndereco($endereco);
+    $pedido->setPagamento($pagamento);
+    $pedido->setHorario($horario);
+    $pedido->setCliente($cliente);
+    
+    $idPedido = PedidoDAO::inserir($pedido);
     $pedido->setId( $pedido);
     foreach ($_SESSION['carrinho'] as $idProduto => $qtd) {
         $produto = ProdutoDAO::getProdutoById($idProduto);
@@ -32,6 +38,7 @@ if( isset($_REQUEST['inserir']) ){
         
     }
     unset($_SESSION['carrinho']);
-    header("Location: ../pedidos.php");
+    header("Location: ../"
+            . "pedidos.php");
 }
 
