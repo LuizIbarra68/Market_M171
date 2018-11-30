@@ -23,6 +23,8 @@ if(session_status() != PHP_SESSION_ACTIVE ){
     <a href="clientes.php"><button>Clientes</button></a>
 
     <a href="categorias.php"><button>Categoria</button></a>
+    
+    <a href="pedidos.php"><button>Pedidos</button></a>
 
     <?php
           echo "Olá, ".$_SESSION['nome'];

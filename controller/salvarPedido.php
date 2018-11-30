@@ -1,12 +1,16 @@
 
 
 <?php
-include_once '../dao/clsPedidoDAO.php';
+include_once '../model/clsCategoria.php';
+include_once '../model/clsProduto.php';
 include_once '../model/clsPedido.php';
+include_once '../dao/clsPedidoDAO.php';
+include_once '../dao/clsProdutoDAO.php';
+include_once '../dao/clsConexao.php';
 if( isset($_REQUEST['inserir']) ){
     
     $pagamento = $_POST['pagamento'];
-    $pagamento = $_POST['txtEndereco'];
+    $endereco= $_POST['txtEndereco'];
     
     session_start();
     include_once '../model/clsCliente.php';
@@ -25,7 +29,7 @@ if( isset($_REQUEST['inserir']) ){
     $pedido->setCliente($cliente);
     
     $idPedido = PedidoDAO::inserir($pedido);
-    $pedido->setId( $pedido);
+    $pedido->setId( $idPedido);
     foreach ($_SESSION['carrinho'] as $idProduto => $qtd) {
         $produto = ProdutoDAO::getProdutoById($idProduto);
         $item = new Item();
