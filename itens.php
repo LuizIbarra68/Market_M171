@@ -39,7 +39,7 @@ include_once 'dao/clsConexao.php';
             foreach ($lista as $item) {
                 echo '<tr>';
                 echo '    <td>'.$item->getProduto()->getId().'</td>';
-                echo '    <td> <img src="fotos_produtos/'
+                echo '    <td> <img width="30px" src="fotos_produtos/'
                         . $item->getProduto()->getFoto().'"></td>';
                 echo '    <td>'.$item->getProduto()->getNome().'</td>';
                 echo '    <td>'.$item->getQuantidade().'</td>';
@@ -51,8 +51,8 @@ include_once 'dao/clsConexao.php';
                 
             }
             echo '<tr>';
-            echo '   <th colspan="3">Total: ,/th>';
-            echo '   <th colspan="3">R$ '.Total.' /th>';
+            echo '   <th colspan="3">Total: </th>';
+            echo '   <th colspan="3">R$ '.$total.' </th>';
             echo '</tr>';
             echo '</table>';
 }

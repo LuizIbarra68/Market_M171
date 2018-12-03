@@ -96,6 +96,6 @@ if (isset($_REQUEST['editar'])) {
 
 <?php
 }else {
-    header("Location: indx.php");
+    header("Location: index.php");
     
 }

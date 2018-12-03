@@ -56,7 +56,7 @@ if( isset($_SESSION['logado'])  && $_SESSION['logado'] ){
                 echo '  <td>'.$pedido->getPagamento().'</td>';
                 echo '  <td>'.$pedido->getCliente()->getNome().'</td>';
                 echo '  <td>'.$pedido->getValor().'</td>';
-                echo '  <td><a href="itens.php?idPedidos='.$pedido->getId().'">'
+                echo '  <td><a href="itens.php?idPedido='.$pedido->getId().'">'
                     .'  <button>Ver Produtos</button></a></td>';
                     echo '</tr>';
             }

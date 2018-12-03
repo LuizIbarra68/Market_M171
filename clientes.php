@@ -106,7 +106,7 @@ include_once 'dao/clsClienteDAO.php';
 
 <?php
 }else {
-    header("Location: indx.php");
+    header("Location: index.php");
     
 }
 
