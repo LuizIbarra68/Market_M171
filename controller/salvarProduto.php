@@ -16,7 +16,7 @@ if (isset($_REQUEST['inserir'])) {
         
         
         
-        $produto =$_POST['txtQuantidade'];
+        $qtd =$_POST['txtQuantidade'];
         $qtd = str_replace(",", ".", $qtd);
         $produto->setQuantidade($qtd);
         

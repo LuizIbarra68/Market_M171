@@ -39,7 +39,7 @@ if( isset($_SESSION['logado'])  && $_SESSION['logado'] ){
             echo '<table border="1">';
             echo '  <tr> ';
             echo '      <th>Código</th> ';
-            echo '      <th>Data</th> ';
+            echo '      <th>Horario</th> ';
             echo '      <th>Endereço</th> ';
             echo '      <th>Pagamento</th> ';
               

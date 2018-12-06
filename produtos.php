@@ -74,7 +74,7 @@ include_once 'model/clsProduto.php';
                     echo ' <td>R$'.$preco.'</td>';
                     
                     $qtd = str_replace(".", ",", $pro->getQuantidade() );
-                    echo ' <td>R$'.$qtd.'</td>';
+                    echo ' <td> '.$qtd.'</td>';
                     
                     echo '  <td>' . $pro->getCategoria()->getNome() . '</td>';
                     
@@ -84,7 +84,7 @@ include_once 'model/clsProduto.php';
                     }
 
                     echo '  <td><a href="frmProduto.php?editar&idProduto='.$pro->getId().'" ><button>Editar</button></a></td>';
-                    echo '  <td><a href="controller/salvarProduto.php?excluir&idProduto='.$pro->getId().'" ><button '.desabilita.' >Excluir</button></a></td>';
+                    echo '  <td><a href="controller/salvarProduto.php?excluir&idProduto='.$pro->getId().'" ><button '.$desabilita.' >Excluir</button></a></td>';
                     echo '  <td><a href="carrinho.php?adicionar&idProduto='.$pro->getId().'" ><button>Adicionar</button></a></td>';
                     
                     
